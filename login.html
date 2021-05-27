@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Mulish&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <!-- header -->
+    <section id="header">
+        <div class="container flex">
+            <img src="img/bloodBankLogo.png" alt="logo" class="logo-img">
+            <div>
+                <select name="LANGUAGE" id="select-lang">
+                    <option value="Arabic">Arabic</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <!-- navigation -->
+    <section id="nav">
+        <div class="container flex">
+            <div class="flex">
+                <a href="design.html" class="link">Home</a>
+                <a href="blood_needs.html" class="link">Blood Needs</a>
+                <a href="#" class="link">Acceptable Types</a>
+                <a href="#" class="link">Hospital&Research</a>
+                <a href="how_donate.html" class="link">How To Donate</a>
+                <a href="#" class="link">Charities</a>
+            </div>
+            <a href="login.html" class="btn">WORKER LOGIN</a>
+        </div>
+    </section>
+    <!-- /navigation -->
+    <!-- /header -->
+
+    <form>
+        <h1 class="login-title"> Worker Login </h1>
+        <div id='login-form'>
+            <label>Username: </label>
+            <input type="text" placeholder="Username" required><br><br>
+            <label>Password</label>
+            <input type="password" placeholder="password" required><br><br>
+
+            <button type="submit" class="login-btn">Login</button><br><br>
+            <a href="design.html">Forget Password?</a>
+        </div>
+    </form>
+
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="container flex">
+            <div id="subscribe">
+                <h1>Subscibe Now</h1>
+                <div class="flex">
+                    <input type="text" placeholder="Enter your E-mail" class="email" />
+                    <a href="#" class="subscribe-btn"> Subscribe</a>
+                </div>
+                <p id="copyright">Copyright 2019 BloodBank. All Rights Reserved</p>
+            </div>
+            <div class="contact">
+                <h1>Contact with us Now</h1>
+                <p><i class="fa fa-mobile" aria-hidden="true"></i>
+                    +201005833820</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>
+                    0458365435</p>
+                <div class="social-icons flex">
+                    <a href="https://twitter.com/" class="contact-link"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a href="https://facebook.com/" class="contact-link"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/" class="contact-link"> <i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://gmail.com/" class="contact-link"> <i class="fa fa-google-plus"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class=" help-support flex">
+                    <a href="#" class="s-link">FAQ</a>
+                    <a href="#" class="s-link">Help Desk</a>
+                    <a href="#" class="s-link">Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /footer -->
+</body>
+
+</html>

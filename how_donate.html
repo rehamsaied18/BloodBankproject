@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Mulish&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="slider.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <!-- header -->
+    <section id="header">
+        <div class="container flex">
+            <img src="img/bloodBankLogo.png" alt="logo" class="logo-img">
+            <div>
+                <select name="LANGUAGE" id="select-lang">
+                    <option value="Arabic">Arabic</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <!-- navigation -->
+    <section id="nav">
+        <div class="container flex">
+            <div class="flex">
+                <a href="design.html" class="link">Home</a>
+                <a href="blood_needs.html" class="link">Blood Needs</a>
+                <a href="#" class="link">Acceptable Types</a>
+                <a href="#" class="link">Hospital&Research</a>
+                <a href="how_donate.html" class="link">How To Donate</a>
+                <a href="#" class="link">Charities</a>
+            </div>
+            <a href="login.html" class="btn">WORKER LOGIN</a>
+        </div>
+    </section>
+    <!-- /navigation -->
+    <!-- /header -->
+    <!-- slider -->
+    <section class="slider">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/donate1.jpg" class="slide-size">
+
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/donate2.jpg" class="slide-size">
+
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/donate3.jpg" class="slide-size">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <!-- /slider -->
+
+    <div class="content">
+        <p>
+            There are eight different blood types and each one holds a unique power to save lives. OneBlood’s exclusive
+            <span class="target">Target Your Type®</span> program shows donors how to give the most needed components of
+            their blood by targeting
+            how they donate.
+        </p>
+    </div>
+    <!-- how you can help -->
+    <div class="how-help">
+        <h1 class="how-help-title">How You Can Help</h1>
+        <div class="how-help-sections flex">
+            <section class="help-section">
+                <img src="img/help1.jpg" class="help-img" />
+                <h2><a href="#">Blood Donor Basics</a></h2>
+                <p>
+                    Your health is important to us, and we want to help you maintain it.
+                </p>
+            </section>
+            <section class="help-section">
+                <img src="img/help2.jpg" class="help-img" />
+                <h2><a href="#">Hosting A Blood Drive</a></h2>
+                <p>
+                    Your help as our community partner is essential to the blood supply.
+                </p>
+            </section>
+            <section class="help-section">
+                <img src="img/help3.jpg" class="help-img" />
+                <h2><a href="#">Donation Methods</a></h2>
+                <p>
+                    Let your blood type lead the way to donate your powerful lifesaving gift.
+                </p>
+            </section>
+            <section class="help-section">
+                <img src="img/help4.jpg" class="help-img" />
+                <h2><a href="#">Share Your Story</a></h2>
+                <p>
+                    Help your community understand the impact blood donation has.
+                </p>
+            </section>
+        </div>
+    </div>
+    <!-- footer -->
+    <section id="footer">
+        <div class="container flex">
+            <div id="subscribe">
+                <h1>Subscibe Now</h1>
+                <div class="flex">
+                    <input type="text" placeholder="Enter your E-mail" class="email" />
+                    <a href="#" class="subscribe-btn"> Subscribe</a>
+                </div>
+                <p id="copyright">Copyright 2019 BloodBank. All Rights Reserved</p>
+            </div>
+            <div class="contact">
+                <h1>Contact with us Now</h1>
+                <p><i class="fa fa-mobile" aria-hidden="true"></i>
+                    +201005833820</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>
+                    0458365435</p>
+                <div class="social-icons flex">
+                    <a href="https://twitter.com/" class="contact-link"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a href="https://facebook.com/" class="contact-link"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/" class="contact-link"> <i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://gmail.com/" class="contact-link"> <i class="fa fa-google-plus"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class=" help-support flex">
+                    <a href="#" class="s-link">FAQ</a>
+                    <a href="#" class="s-link">Help Desk</a>
+                    <a href="#" class="s-link">Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /footer -->
+    <!-- script -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+</body>
+
+</html>
